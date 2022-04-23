@@ -1,0 +1,1110 @@
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+$blanco:white;
+$amarillo: #ffbb00;
+$amarilloBordes: #ffbb00b9;
+$azul: rgb(9, 77, 113);
+$azulClaro: rgba(27, 118, 166, 0.4);
+$azulOscuro: rgba(16, 91, 132, 0.499);
+$azulMasOscuro: rgba(4, 54, 81, 0.647);
+$azulBordes: rgba(186, 223, 244, 0.652);
+$gris: #eceaea;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+};
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  min-height: 600px;
+  background:linear-gradient(	$azulClaro,$azulClaro), url("./imagenes/IMAGEN\ HERO.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+};
+.navbar-light{
+  .navbar-toggler{
+    color: $azul;
+    border-color: $azulClaro;
+  }
+}
+.nav_contacto{
+  background-color: $azul;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  div{
+    display: flex;
+    div{
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      div{
+        margin: 0px;
+        color: $blanco;
+        height: 100%;
+      };
+      i{
+        margin: 0px 10px;
+        font-size: 1.3em;
+        color: $blanco;
+      }
+    }
+    i{
+      margin: 0px 10px;
+      font-size: 1.3em;
+      color: $blanco;
+    }
+    
+  };
+}
+
+#barraNavegacion{
+  padding: 0px 60px;
+}
+.navbar-collapse{
+  flex-grow: 0;
+};
+
+.nav_logo img{
+  height: 70px ;
+};
+.nav-item{
+  margin: 0px 5px;
+}
+.nav-link{
+  font-size: larger;
+  font-weight: 500;
+};
+
+ .header_informacion{
+   padding: 70px 60px;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   color: $blanco;
+ };
+
+.header_informacion_bienvenido {
+  flex-grow: 1;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  div{
+    display: inline;
+    h4{
+      display: inline;
+      font-size: 1.5em;
+      font-weight: 600;
+    };
+    .linea{
+      content: "";
+      display: block;
+      height: 4px;
+      width: 150px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border-radius: 1px;
+      background: $amarillo;
+  
+    };
+  };
+  
+  h2{
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 3em;
+  };
+  button{
+    margin-top: 10px;
+    font-size: x-large;
+    color: $blanco;
+    font-weight: 500;
+    border: none;
+    background: $amarillo;
+    border-radius: 30px;
+    padding: 5px 50px;
+  }
+};
+
+.formulario{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left:15px; 
+  background-color: $blanco;
+  border-radius: 10px;
+  h4{
+    border-radius:10px 10px 0px 0px;
+    padding: 7px;
+    text-align: center;
+    background-color: $azul;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: 3px solid $amarillo;
+  };
+  form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    input{
+      margin: 10px 5px;
+      border-radius: 12px;
+      padding: 3px 13px;
+      border:none;
+      background-color: $gris;
+      outline: none;
+    };
+    div{
+      display: flex;
+      input{
+        margin: 10px 5px;
+        flex-grow: 1;
+        width: 40%;
+      };
+    };
+    
+    textarea{
+      margin: 10px 5px;
+      border-radius: 12px;
+      padding: 3px 13px;
+      border:none;
+      background-color: $gris;
+      outline: none;
+    };
+    button{
+      width: 40%;
+      margin: 10px 5px;
+      padding: 5px 0px;
+      border-radius: 15px;
+      border:none;
+      background-color: $amarillo;
+      color: $blanco;
+      outline: none;
+      font-weight: 500;
+    };
+  };
+}
+
+//----------- mas populares -------------------
+
+.mas_populares{
+  margin: 4% 7%;
+}
+.section_titulo{
+  .section_titulo_principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .circulo{
+      height: 10px !important;
+      width: 10px !important;
+      background-color: $amarillo;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    h4{
+      margin: 0px;
+    }
+  }
+  h3{
+    font-size: 1.7em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  };
+  .linea{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 1px;
+    background: $amarillo;
+  };
+};
+.mas_populares_contenedor_cursos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    .card{
+      flex-grow: 1;
+      border-radius: 12px;
+      box-shadow: 1.8px 1.8px 8px rgba(0,0,0,0.3);
+      margin-right: 15px;
+      img{
+        border-radius:12px 12px 0px 0px;
+        border-bottom: 8px solid $amarillo;
+      }
+      .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0px;
+        padding-top: 1px;
+        margin-bottom: 5px;
+        h5{
+          font-size: 0.9em;
+          letter-spacing: 0.5px;
+          font-weight: 800;
+          line-height: 2em;
+          text-align: center;
+        };
+        button{
+          margin-top: 15px;
+          padding: 5px 20px;
+          border-radius: 15px;
+          border:none;
+          background-color: $amarillo;
+          color: $blanco;
+          outline: none;
+          font-weight: 500;
+        };
+      }
+    };
+  }
+};
+.mas_populares_boton{
+  display: flex;
+  justify-content: center;
+  button{
+    margin: 10px 5px;
+    font-size: x-large;
+    color: $amarillo;
+    font-weight: 500;
+    border: 3px solid $amarillo;
+    background: $blanco;
+    border-radius: 30px;
+    padding: 5px 50px;
+  }; 
+} 
+
+//----------- acerca de -------------------
+
+.acerca-de{
+}
+.acerca-de_informacion{
+  padding: 0% 7%;
+  padding-bottom: 70px;
+  background-color: $azul;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .acerca-de_informacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: $blanco;
+    margin-right: 50px;
+    margin-top: 30px;
+    button{
+      width: 170px;
+      margin: 10px 5px;
+      padding: 10px 0px;
+      border-radius: 15px;
+      border:none;
+      background-color: $amarillo;
+      color: $blanco;
+      outline: none;
+      font-weight: 500;
+    };
+    p{
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 50px 0px;
+      text-align: justify;
+    };
+  }
+  .acerca-de_informacion_contenedor_imagen{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .acerca-de_informacion_imagen{
+      outline: 5px solid $azulBordes;
+      border-radius: 12px;
+      z-index: 5;
+      img{
+        width: 300px;
+        border-radius: 12px;
+        
+      };
+    }
+    .acerca-de_informacion_imagen::before{
+      content: "";
+      display: block;
+      margin-top:22px;
+      margin-left: -10px;
+      width: 300px;
+      height: 200px;
+      border: 4px solid $amarilloBordes;
+      position: absolute;
+      border-radius: 12px;
+      transform: rotate(5deg);
+      z-index: -1;
+    };
+  }; 
+};
+
+.acerca-de_caracteristicas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/BACKGROUND\ BENEFITS.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  div{
+    margin: 50px 0px;
+    display: flex;
+    div{
+      display: flex;
+      flex-direction: column;
+      margin: 0px 50px;
+      justify-content: center;
+      align-items: center;
+      div{
+        width: 100px;
+        background-color: $blanco;
+        border-radius: 50%;
+        padding: 20px;
+        margin:0;
+        img{
+          width: 100%;
+        };
+      };
+      h4{
+        margin-top: 10px;
+        color: $blanco;
+        text-align: center;
+      }
+    };
+  };
+};
+
+//--------- carreras --------------
+.carreras{
+  margin: 50px;
+}
+.carreras_listado{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+};
+.carreras_listado_en_columna{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.carreras_listado_en_fila{
+  display: flex;
+  flex-direction: row;
+}
+
+.administracion{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 0px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ ADMINISTRATION.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+
+.contaduria{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 0px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+
+.arquitectura{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  height: 130px;
+  flex-grow: 1;
+  padding-left: 20px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+.matematicas{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  width: 440px;
+  height: 130px;
+  flex-grow: 1;
+  padding-left: 20px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+.programacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  width: 440px;
+  height: 130px;
+  flex-grow: 1;
+  padding-left: 20px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+.biologia{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  width: 440px;
+  height: 130px;
+  padding-left: 20px;
+  background:linear-gradient(	$azulOscuro,$azulOscuro), url("./imagenes/IMAGE\ \ CATEGORY\ BIOLOGY.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  h3{
+    font-size: 0.9em;
+    color: $blanco;
+    font-weight: 800;
+  }
+  button{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    border:none;
+    background-color: $amarillo;
+    color: $blanco;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9em;
+  };
+}
+
+//-----equipo--------
+.equipo{ 
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0px;
+  background-color: $gris;
+  .section_titulo{
+    margin: 40px;
+  }
+  .equipo_card{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    div{
+      display: flex;
+    }
+  }
+}
+
+.carta {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  height: 320px;
+  margin: 20px 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  .carta-header{
+    width: 100%;
+    height: 100px;
+    display: block;
+    padding: 0px;
+    object-fit: cover;
+  }
+  .carta-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    img {
+      height: 100px;
+      border: 5px solid white;
+      background-color: white;
+      border-radius: 50%;
+      margin-top: calc(-48px - 5px);
+      object-fit: cover;
+    }
+    h4{
+      font-size: 1.2em;
+      color: rgb(50, 49, 49);
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    h3{
+      font-size: 1.5em;
+      color: $amarillo;
+      font-weight: 500;
+    }
+    button{
+      margin-top: 20px;
+      padding: 3px 14px;
+      background-color: $blanco;
+      border-radius: 15px;
+      color: $amarillo;
+      border:2px solid $amarillo;
+    }
+  }  
+}
+
+
+//-----tentimonios------
+.testimonios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonios_contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background:linear-gradient(	$azulMasOscuro,$azulMasOscuro), url("./imagenes/IMAGE\ TESTIMONIALS.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 30px;
+}
+.testimonios_pesentacion{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $blanco;
+  }
+  h4{
+    font-size: 2em;
+    color: $blanco;
+    font-weight: 800;
+    text-align: center;
+  }
+}
+
+.carousel-item{
+  div{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    padding: 5px;
+    img{
+      height: 300px;
+    }
+    .nombre{
+      position: absolute;
+      color: orange;
+      background-color: $blanco;
+      font-size: 1em;
+      font-weight: 800;
+      height: 30px;
+      padding: 2px 55px;
+      margin: 0px 20% ;
+      margin-top: 280px;
+      border-radius: 5px;
+      z-index: 1;
+    }
+  }
+}
+.carousel-indicators{
+  position: relative;
+  button{
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+    opacity: 0.8 !important;
+  }
+  .active{
+    background-color: orange !important;
+  }
+}
+
+//-----footer------
+footer{
+  margin-top: 40px;
+  background-color: $azul;
+  color: $blanco;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.informacion_general{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  img{
+    width: 120px;
+
+  }
+  div{
+    ul{
+      margin-top: 30px;
+      padding: 0px;
+      li{
+        padding: 0px;
+        margin-bottom: 25px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        a{
+          text-decoration: none;
+          color: $blanco;
+        }
+        i{
+          margin-right: 15px;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.newsletter_contenedor{
+  .newsletter{
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .input{
+    width: 100%;
+    padding: 8px 100px 8px 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    background: $amarillo;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+  }
+}
+
+.empresa{
+  width: 100%;
+  div{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img{
+      height: 40px;
+    }
+  }
+  
+}
+
+
+@media (max-width: 768px) { 
+  .testimonios{
+    width: 100%;
+  }
+  .testimonios_contenedor{
+    justify-content: center;
+  }
+  .testimonios_pesentacion{
+    padding: 20px;
+  }
+  .testimonios_personas{
+    width: 290px;
+  }
+  #barraNavegacion {
+    padding: 0px 10px;
+  }
+
+ }
+
+ @media (max-width: 650px) {
+   .mas_populares_contenedor_cursos{
+     display: flex;
+     justify-content: center;
+     div{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+     }
+   }
+   .equipo_card{
+     div{
+       display: flex;
+       flex-direction: column;
+     }
+   }
+   .carreras_listado_en_fila{
+     display: flex;
+     flex-direction: column;
+     .administracion{
+        width: 300px;
+        height: 130px;
+        align-items: flex-start;
+        padding-left: 20px;
+     }
+     .contaduria{
+        width: 300px;
+        height: 130px;
+        align-items: flex-start;
+        padding-left: 20px;
+     }
+     .arquitectura{
+        width: 300px;
+        height: 130px;
+        align-items: flex-start;
+        padding-left: 20px;
+     }
+   }
+   .carreras_listado_en_columna{
+      justify-content: center;
+      .matematicas{
+        width: 300px;
+        height: 130px;
+      }
+      .programacion{
+        width: 300px;
+        height: 130px;
+      }
+      .biologia{
+        width: 300px;
+        height: 130px;
+      }
+   }
+   
+    .nav_logo img {
+      height: 60px;
+    }
+    .nav_contacto{
+      display: flex;
+      flex-direction: column;
+    }
+    .acerca-de_caracteristicas{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .acerca-de_informacion{
+      .acerca-de_informacion_contenido {
+        width: 100%;
+        margin-top: 15px;
+        p{
+          font-size: 1em;
+        }
+      }
+    }
+    .header_informacion_bienvenido{
+      h2{
+        font-size: 2em;
+      }
+      h4{
+        font-size: 1.2em;
+      }
+      button{
+        margin-top: 10px;
+        font-size: large;
+        color: white;
+        font-weight: 500;
+        border: none;
+        background: #ffbb00;
+        border-radius: 30px;
+        padding: 5px 20px;
+      }
+    }
+    footer{
+      justify-items: center;
+      align-items: center;
+      .informacion_general{
+        display: flex;
+        flex-direction: column;
+        img{
+          margin: auto;
+          margin-bottom: 20px;
+        }
+        div{
+          margin: auto;
+        }
+      }
+    } 
+ }
+
+ @media (max-width:450px) {
+  .section_titulo{
+    h3 {
+      font-size: 1.2em;
+      font-weight: 800;
+      margin-bottom: 20px;
+    };
+    div{
+      .linea{
+        width: 200px;
+      }
+      .section_titulo_principal{
+        h4{
+          font-size: 1em;
+        }
+      }
+    }   
+  }
+  .formulario {
+    width: 250px;
+    margin: 0 auto;
+    form{
+      padding: 5px;
+      div{
+        display: flex;
+        flex-direction: column;
+        input{
+          width: 230px;
+        }
+      }
+    }
+  }
+  .carreras_listado_en_fila{
+    justify-content: center;
+    .administracion{
+       width: 200px;
+       height: 100px;
+    }
+    .contaduria{
+       width: 200px;
+       height: 100px;
+    }
+    .arquitectura{
+       width: 200px;
+       height: 100px;
+    }
+  }
+  .carreras_listado_en_columna{
+     justify-content: center;
+     .matematicas{
+       width: 200px;
+       height: 100px;
+     }
+     .programacion{
+       width: 200px;
+       height: 100px;
+     }
+     .biologia{
+       width: 200px;
+       height: 100px;
+     }
+  }
+  .nav_contacto{
+    display: none;
+  }
+  .acerca-de_informacion{
+    .acerca-de_informacion_contenedor_imagen{
+      .acerca-de_informacion_imagen{
+        img{
+          width: 200px;
+        }
+      }
+      .acerca-de_informacion_imagen::before{
+        width: 200px;
+        height: 130px
+      }
+    }
+  }
+  .carta{
+    width: 200px;
+    .carta-body{
+      h3{
+        font-size: 1.2em;
+      }
+      h4{
+        font-size: 1em;
+      }
+    }
+  }
+  
+  .card{
+    width: 12rem !important;
+  }
+  .testimonios{
+    .testimonios_contenedor{
+      .testimonios_pesentacion{
+        h4{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  .testimonios_personas{
+    width: 200px;
+  }
+  .carousel-item  {
+    div{
+      height: 280px;
+      img{
+        height: 250px;
+        object-fit: cover;
+      }
+      .nombre{
+        padding: 2px 20px;
+        margin-top: 235px;
+      }
+    }
+  }
+  
+ }
+ @media (max-width:575px){
+  #navbarNav{
+    .navbar-nav{
+      background-color: $azulMasOscuro !important;
+    }
+    .nav-item:hover{
+      background-color: $azulOscuro !important;
+    }
+  }
+ }
