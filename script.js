@@ -16,8 +16,7 @@ carouselIndicators.forEach((item, index) => {
         carousel.forEach(item => item.classList.remove('active'));
         carousel[index].classList.add('active');
         }, 100);
-
-
+        
     });
 });
 
