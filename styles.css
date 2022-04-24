@@ -17882,10 +17882,16 @@ header {
   width: 100%;
   padding: 0px;
   min-height: 600px;
-  background: linear-gradient(rgba(27, 118, 166, 0.4), rgba(27, 118, 166, 0.4)), url("./imagenes/IMAGEN HERO.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+header video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 .navbar-light .navbar-toggler {
@@ -18054,7 +18060,7 @@ header {
 }
 
 .mas_populares {
-  margin: 4% 7%;
+  margin: 6% 7%;
 }
 
 .section_titulo .section_titulo_principal {
@@ -18939,6 +18945,21 @@ footer {
   }
   #navbarNav .nav-item:hover {
     background-color: rgba(16, 91, 132, 0.499) !important;
+  }
+}
+@media (max-width: 1170px) {
+  header video {
+    height: 880px;
+  }
+}
+@media (max-width: 755px) {
+  header video {
+    height: 900px;
+  }
+}
+@media (max-width: 366px) {
+  header video {
+    height: 950px;
   }
 }
 

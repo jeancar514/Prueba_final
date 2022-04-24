@@ -8,6 +8,7 @@ $azulOscuro: rgba(16, 91, 132, 0.499);
 $azulMasOscuro: rgba(4, 54, 81, 0.647);
 $azulBordes: rgba(186, 223, 244, 0.652);
 $gris: #eceaea;
+$video : 1px;
 
 *{
   margin: 0px;
@@ -21,10 +22,17 @@ header{
   width: 100%;
   padding: 0px;
   min-height: 600px;
-  background:linear-gradient(	$azulClaro,$azulClaro), url("./imagenes/IMAGEN\ HERO.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
 };
 .navbar-light{
   .navbar-toggler{
@@ -196,7 +204,7 @@ header{
 //----------- mas populares -------------------
 
 .mas_populares{
-  margin: 4% 7%;
+  margin: 6% 7%;
 }
 .section_titulo{
   .section_titulo_principal{
@@ -1105,6 +1113,28 @@ footer{
     }
     .nav-item:hover{
       background-color: $azulOscuro !important;
+    }
+  }
+ }
+
+ @media (max-width:1170px){
+  header{
+    video{
+      height: 880px;
+    }
+  }
+ }
+ @media (max-width:755px){
+  header{
+    video{
+      height: 900px;
+    }
+  }
+ }
+ @media (max-width:366px){
+  header{
+    video{
+      height: 950px;
     }
   }
  }
