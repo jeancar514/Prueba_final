@@ -7,7 +7,7 @@ botonNav.addEventListener('click', () => {
 
 const carousel = [...document.querySelectorAll('.carousel-item')];
 const carouselIndicators = [...document.querySelectorAll('.carousel-indicators button')];
-
+console.log(carouselIndicators);
 const recorrerCarrousel = (index) => {
     carouselIndicators.forEach(item => item.classList.remove('active'));
     carouselIndicators[index].classList.add('active');
@@ -21,3 +21,16 @@ carouselIndicators.forEach((item, index) => {
         recorrerCarrousel(index);
     });
 });
+
+const avanzarCarrousel = () => {
+    i = carouselIndicators.indexOf(carouselIndicators.find(element => element.className === "active")) ;
+    if (i === carouselIndicators.length -1) {
+       i = 0;
+    }else{
+        i++;
+    }
+    recorrerCarrousel(i);
+}
+
+setInterval(avanzarCarrousel, 2000);
+
